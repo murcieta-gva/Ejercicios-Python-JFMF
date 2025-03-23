@@ -4,10 +4,11 @@
 # Implemente función esMayorEdad(e)
 def esMayorEdad(edad,nombre) :
     if edad >= 18 :
-        return print(nombre+' Ya puedes conducir')
+        print('Ya puedes conducir '+nombre)
+        return True
     else :
-        return print('No puedes conducir eres menor edad')
-
+        print('No puedes conducir eres menor de edad ' +nombre)
+        return False
 # Programa principal
 def main():
     nombre=input("Introduzca su nombre: ");
@@ -16,10 +17,6 @@ def main():
     # Utilice la función definida
     esMayorEdad(edad,nombre)
     # Estructura alternativa Si (condidición con función) entonces --> sino ...
-    if esMayorEdad:
-        print('Eres mayor de edad')
-    else :
-        print('No eres mayor de edad')
 
 
 if __name__== "__main__" :
