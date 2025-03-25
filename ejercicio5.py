@@ -33,7 +33,7 @@ def generarImpares(valores, inicio) :
 def generarPares(valores, inicio):
     impares=[]
     numero=inicio
-
+    # --> Generamos el array de numeros <--
     if esPar(inicio):
         numero=inicio+1
         for i in range(valores):
